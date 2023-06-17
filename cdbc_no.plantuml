@@ -1,3 +1,24 @@
 @@startuml
-[Central bank of Norway]
+
+[Shard 1] as shard1
+[Shard 2] as shard2
+
+[Validator\nDNB] as dnb
+[Validator\nNordea] as nordea
+[Validator\nSparebank1] as sparebank1
+[Validator\nEika] as eika
+[Validator\nBN bank] as bnbank
+
+
+
+[<b>Central bank of Norway</b>\n- Governance\n- Protocol upgrades\n- RPC gateway] as norgesbank
+[Central bank of Sweden\n- Governance\n- Protocol upgrades\n- RPC gateway] as swedenbank
+[Ethereum] as eth
+[NEAR protocol] as near
+
+dnb-down->norgesbank
+nordea-down->norgesbank
+sparebank1-down->norgesbank
+eika-down->norgesbank
+bnbank-down->norgesbank
 @@enduml

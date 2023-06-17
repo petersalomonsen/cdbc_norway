@@ -21,4 +21,13 @@ CDBC creates opportunities to accelerate, open up and be more inclusive in our e
 
 - The technological solution must also encourage participation
   - Blockchain technology/cryptocurrencies are examples generating incentives for such contribution: both for operation, maintenance and evolution
-  - Open source ensures transparency 
+  - Open source to ensure independent security reviews, and clear understanding on the mechanics of the solution
+- Interoptability across blockchains
+  - Other central banks
+  - Fully decentralized blockchains
+- Validators approved by financial authorities
+  - Encourage existing fincancial institutions to invest and participate moving forward
+- Proof of Stake vs Proof of Authority
+  - Reward validators
+  - Let the users choose where to stake
+
