@@ -1,4 +1,6 @@
 @@startuml
+skinparam nodesep 100
+skinparam ranksep 100
 
 actor person1
 actor person2
@@ -14,7 +16,7 @@ person1-down->dnb
 person2-down->nordea:\n bank customers staking deposits\nwith consumer banks
 person3-down->eika
 
-rectangle "Norway blockchain" as norwaychain {
+rectangle "Norway blockchain" as norwaychain #FF4444 {
     [<b>NOK Fungible Token contract</b>\nVAT on purchases\nIncome tax] as ft
     [<b>SEK Fungible Token contract</b>] as ftsekno
     [<b>Employment contract</b>] as employeecontract
@@ -26,9 +28,9 @@ rectangle "Norway blockchain" as norwaychain {
     ftsekno-[hidden]down-nft
 }
 
-[<b>Central bank of Norway</b>\n- Governance\n- Protocol upgrades\n- RPC gateway] as norgesbank
+[<b>Central bank of Norway</b>\n- Governance\n- Protocol upgrades\n- RPC gateway] as norgesbank #FFFFFF
 
-package "Central bank of Sweden" as swedenbank {
+package "Central bank of Sweden" as swedenbank #FFFF55 {
     [<b>SEK Fungible Token contract</b>] as ftse
     [<b>NOK Fungible Token contract</b>] as ftnokse
     ftnokse-[hidden]right-ftse
@@ -36,7 +38,7 @@ package "Central bank of Sweden" as swedenbank {
 ftnokse-left-ft : bridge
 ftse-left-ftsekno : bridge
 
-cloud "Other decentralized blockchains" {
+cloud "Other decentralized blockchains" #DDDDDD {
     package "Ethereum" as eth {
         [NOK Fungible token] as ftnoketh
     }
@@ -47,8 +49,8 @@ cloud "Other decentralized blockchains" {
     [Solana]
     [Polkadot]
 }
-ftnoketh-down-ft : bridge
-ftnoknear-down-ft : bridge
+ftnoketh-up-ft : bridge
+ftnoknear-up-ft : bridge
 
 dnb-down->norwaychain
 nordea-down->norwaychain
