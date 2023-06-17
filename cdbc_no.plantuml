@@ -1,7 +1,8 @@
 @@startuml
 
-[Shard 1] as shard1
-[Shard 2] as shard2
+actor person1
+actor person2
+actor person3
 
 [Validator\nDNB] as dnb
 [Validator\nNordea] as nordea
@@ -9,16 +10,52 @@
 [Validator\nEika] as eika
 [Validator\nBN bank] as bnbank
 
+person1-down->dnb
+person2-down->nordea:\n bank customers staking deposits\nwith consumer banks
+person3-down->eika
 
+rectangle "Norway blockchain" as norwaychain {
+    [<b>NOK Fungible Token contract</b>\nVAT on purchases\nIncome tax] as ft
+    [<b>SEK Fungible Token contract</b>] as ftsekno
+    [<b>Employment contract</b>] as employeecontract
+    [<b>Insurance contract</b>] as insurance
+    [<b>Voting contract</b>] as voting
+    [<b>Asset ownership contract</b>\nNon Fungible Tokens] as nft
+    employeecontract-[hidden]down-ft
+    insurance-[hidden]down-voting
+    ftsekno-[hidden]down-nft
+}
 
 [<b>Central bank of Norway</b>\n- Governance\n- Protocol upgrades\n- RPC gateway] as norgesbank
-[Central bank of Sweden\n- Governance\n- Protocol upgrades\n- RPC gateway] as swedenbank
-[Ethereum] as eth
-[NEAR protocol] as near
 
-dnb-down->norgesbank
-nordea-down->norgesbank
-sparebank1-down->norgesbank
-eika-down->norgesbank
-bnbank-down->norgesbank
+package "Central bank of Sweden" as swedenbank {
+    [<b>SEK Fungible Token contract</b>] as ftse
+    [<b>NOK Fungible Token contract</b>] as ftnokse
+    ftnokse-[hidden]right-ftse
+}
+ftnokse-left-ft : bridge
+ftse-left-ftsekno : bridge
+
+cloud "Other decentralized blockchains" {
+    package "Ethereum" as eth {
+        [NOK Fungible token] as ftnoketh
+    }
+    package "NEAR protocol" as near {
+        [NOK Fungible token] as ftnoknear
+    }
+
+    [Solana]
+    [Polkadot]
+}
+ftnoketh-down-ft : bridge
+ftnoknear-down-ft : bridge
+
+dnb-down->norwaychain
+nordea-down->norwaychain
+sparebank1-down->norwaychain
+eika-down->norwaychain
+bnbank-down->norwaychain
+
+norgesbank-up->ft
+
 @@enduml
