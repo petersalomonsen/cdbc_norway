@@ -47,7 +47,7 @@ cloud "Other decentralized blockchains" #DDDDDD {
     }
 
     [Solana]
-    [Polkadot]
+    [Bitcoin]
 }
 ftnoketh-up-ft : bridge
 ftnoknear-up-ft : bridge
