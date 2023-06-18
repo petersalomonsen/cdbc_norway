@@ -23,28 +23,30 @@ CBDC creates opportunities to accelerate, open up and be more inclusive in our e
   
 # Technological solution
 
-For a souverign state, it's important to be in control of the technology that powers its monetary flow. It must be possible for the people, through the elected government and authorities to make decisions and have them implemented in the technical solution. A digital currency, implemented with blockchain technology that also facilitates smart contracts, enables fully automated and integrated processes where there are manual actions or multiple IT systems interacting today. Applying a system that have the capability to "evolve on its own", must not result in a system that cannot be controlled by authorities.
+For a souverign state, it's important to be in control of the technology that powers its monetary flow. It must be possible for the people, through the elected government and authorities to make decisions and have them implemented in the technical solution. A digital currency, implemented with blockchain technology that also facilitates smart contracts, enables fully automated and integrated processes where there are manual actions or multiple IT systems interacting today. Applying a system that has the capability to "evolve on its own", must not result in a system that cannot be controlled by authorities.
 
 Still interoptability with other currencies and authorities is beneficial. Blockchain and smart contracts makes it possible for agreements between authorities to be written and executed in computer programs that all transactions must pass through. On an international level, one must work together on agreeing on standard interfaces, and also even finding common technological solutions through open source software.
 
 The technological solution must also encourage participation in the society. There must be incentives for private financial institutions to contribute to and maintain the system. Blockchain technology/cryptocurrencies are examples generating incentives for such contribution: both for operation, maintenance and evolution, and open source software to ensure independent security reviews, reuse of technology, and clear understanding on the mechanics of the solution.
 
-Blockchain technology has been around long before central banks started to look into on how to take advantage of it. An attribute that distinguish it from traditional banking is that all participants in a blockchain use the same open source software and technology while interfaces between banks today are APIs that encapsulates closed proprietary software solutions. The open source communities, the constant chase of security vulnerabilities and continuous mitigation of these that we see in public decentralized blockchains are on a level never seen before. Obtaining a "battle proven" system that can withstand cyber-attacks increasing in scale has a better chance by embracing the technologies and communities that powers the large public decentralized blockchains. This means that a CBDC blockchain also is better off building on such technologies and also bridging with the decentralized blockchains. Bridging would in practice mean also issuing tokens pegging the CBDC on these chains.
+Blockchain technology has been around long before central banks started to look into on how to take advantage of it. An attribute that distinguish it from traditional banking is that all participants in a blockchain use the same open source software and technology, while interfaces between banks today are APIs that encapsulates closed proprietary software solutions. The open source communities, the constant chase of security vulnerabilities and continuous mitigation of these that we see in public decentralized blockchains are on a level never seen before. Obtaining a "battle proven" system that can withstand cyber-attacks increasing in scale has a better chance by embracing the technologies and communities that powers the large public decentralized blockchains. This means that a CBDC blockchain also is better off building on such technologies and also bridging with the decentralized blockchains. Bridging would in practice mean also issuing tokens pegging the CBDC on these chains.
 
 So why not run everything on a public decentralized chain? The answer here is that it's crucial for a state to keep the control within its borders. The governance of a decentralized chain is a product by participants from all over the world, and might not be in line with the needs of a small country like Norway.
 
 A dedicated CBDC blockchain in Norway could be under the authority of the Ministry of Finance. The Financial Supervisory Authority ( Finanstilsynet ) could approve validators, which would likely be existing financial institutions in Norway.
 
-For validating and consensus, it can be discussed if "Proof of Stake" (PoS) should be applied versus "Proof of Authority" (PoA). PoS has some advantages when it comes to rewarding participation, and also gives the public a chance to choose which actor to stake with. Still not everyone should be able to become a validator, so mechanism for verifying a license issued by authorities must also be in place.
+For validating and consensus, it can be discussed if "Proof of Stake" (PoS) should be applied versus "Proof of Authority" (PoA). PoS has some advantages when it comes to rewarding participation, and also gives the public a chance to choose which actor to stake with. Still not everyone should be able to become a validator, so mechanisms for verifying a license issued by authorities must also be in place.
 
-The diagram below shows how todays banks in Norway can become validators in a national blockchain. Consumers can stake with the validator of their preference. The blockchain itself features smart contracts for several use cases like:
+The diagram below shows how todays banks in Norway can become validators in a national blockchain. Consumers can stake with the validator of their preference. Banks can also act as custodians, safeguarding private keys of their customers, and also provide assistance or tailored user experiences for interacting with the technology.
 
-- Primarily the fungible token of the national central bank digital currency with built in logic for example:
+The blockchain itself features smart contracts for several use cases like:
+
+- Primarily the Fungible Token of the national central bank digital currency with built in logic on for example:
   - VAT on purchases
   - Income tax collection
   - and more
 - Fungible tokens bridged from other central banks ( e.g. Swedish e-krona )
-- Employment contract
+- Employment contracts
   - Monthly wage
   - Bonus
 - Asset ownership
